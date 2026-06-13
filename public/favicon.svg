@@ -3,7 +3,7 @@
   
   <g fill="none" stroke="#F7F5F0" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
     <!-- Main Head Outline -->
-    <path d="M 32 40 Q 50 25 68 40 L 68 55 Q 50 75 32 55 Z" />
+    <path d="M 32 40 Q 50 25 68 40 L 68 60 Q 50 80 32 60 Z" />
     
     <!-- Left Floppy Ear -->
     <path d="M 32 40 C 15 45, 15 70, 32 60" />
