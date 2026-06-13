@@ -7,7 +7,6 @@ export default function App() {
         initial="hidden"
         animate="visible"
         whileHover="hover"
-        whileTap="tap"
         variants={{
           hidden: { opacity: 0, borderColor: "var(--color-institutional)" },
           visible: { 
@@ -20,7 +19,7 @@ export default function App() {
             transition: { duration: 0.2, ease: "easeInOut" }
           }
         }}
-        className="border-[5px] md:border-[6px] px-6 py-4 md:px-12 md:py-8 relative cursor-pointer"
+        className="border-[5px] md:border-[6px] px-6 py-4 md:px-12 md:py-8 relative cursor-pointer select-none"
       >
         <motion.h1 
           variants={{
@@ -31,7 +30,7 @@ export default function App() {
               transition: { duration: 0.2, ease: "easeInOut" }
             }
           }}
-          className="font-brutalist text-4xl sm:text-6xl md:text-7xl lg:text-[8rem] font-black leading-none uppercase m-0 p-0 whitespace-nowrap"
+          className="font-brutalist text-4xl sm:text-6xl md:text-7xl lg:text-[8rem] font-black leading-none uppercase m-0 p-0 whitespace-nowrap pointer-events-none"
           style={{ fontStretch: 'condensed' }}
         >
           DOG CAKE
