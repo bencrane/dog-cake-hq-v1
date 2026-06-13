@@ -22,14 +22,6 @@ export default function App() {
         className="border-[5px] md:border-[6px] px-6 py-4 md:px-12 md:py-8 relative cursor-pointer select-none"
       >
         <motion.h1 
-          variants={{
-            hidden: { color: "var(--color-institutional)" },
-            visible: { color: "var(--color-institutional)" },
-            hover: { 
-              color: "var(--color-terracotta)",
-              transition: { duration: 0.2, ease: "easeInOut" }
-            }
-          }}
           className="font-brutalist text-4xl sm:text-6xl md:text-7xl lg:text-[8rem] font-black leading-none uppercase m-0 p-0 whitespace-nowrap pointer-events-none"
           style={{ fontStretch: 'condensed' }}
         >
