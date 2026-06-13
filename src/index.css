@@ -3,8 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
 
 @theme {
-  --color-deadmatte: #0a0a0a;
-  --color-institutional: #f5f5f5;
+  --color-deadmatte: #1C1412;
+  --color-institutional: #F7F5F0;
+  --color-terracotta: #C85A32;
   --font-brutalist: Inter, Impact, 'Arial Black', sans-serif;
 }
 
