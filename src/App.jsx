@@ -9,16 +9,14 @@ export default function App() {
         whileHover="hover"
         whileTap="tap"
         variants={{
-          hidden: { opacity: 0, scale: 0.98, borderColor: "var(--color-institutional)" },
+          hidden: { opacity: 0, borderColor: "var(--color-institutional)" },
           visible: { 
             opacity: 1, 
-            scale: 1, 
             borderColor: "var(--color-institutional)",
-            transition: { duration: 0.4, ease: [0.16, 1, 0.3, 1] }
+            transition: { duration: 0.3, ease: "easeOut" }
           },
           hover: { 
             borderColor: "var(--color-terracotta)", 
-            scale: 1.02,
             transition: { type: "spring", stiffness: 600, damping: 25 }
           },
           tap: { 
@@ -28,30 +26,20 @@ export default function App() {
         }}
         className="border-[5px] md:border-[6px] px-6 py-4 md:px-12 md:py-8 relative cursor-pointer"
       >
-        <motion.div
-          initial={{ clipPath: "inset(100% 0% 0% 0%)", y: 20 }}
-          animate={{ clipPath: "inset(0% 0% 0% 0%)", y: 0 }}
-          transition={{ 
-            duration: 0.5, 
-            ease: [0.16, 1, 0.3, 1], 
-            delay: 0.1 
+        <motion.h1 
+          variants={{
+            hidden: { color: "var(--color-institutional)" },
+            visible: { color: "var(--color-institutional)" },
+            hover: { 
+              color: "var(--color-terracotta)",
+              transition: { type: "spring", stiffness: 800, damping: 20 }
+            }
           }}
+          className="font-brutalist text-4xl sm:text-6xl md:text-7xl lg:text-[8rem] font-black leading-none uppercase m-0 p-0 whitespace-nowrap"
+          style={{ fontStretch: 'condensed' }}
         >
-          <motion.h1 
-            variants={{
-              hidden: { color: "var(--color-institutional)" },
-              visible: { color: "var(--color-institutional)" },
-              hover: { 
-                color: "var(--color-terracotta)",
-                transition: { type: "spring", stiffness: 800, damping: 20 }
-              }
-            }}
-            className="font-brutalist text-4xl sm:text-6xl md:text-7xl lg:text-[8rem] font-black leading-none uppercase m-0 p-0 whitespace-nowrap"
-            style={{ fontStretch: 'condensed' }}
-          >
-            DOG CAKE
-          </motion.h1>
-        </motion.div>
+          DOG CAKE
+        </motion.h1>
       </motion.div>
     </main>
   );
