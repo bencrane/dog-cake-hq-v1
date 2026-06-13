@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap');
+
+@theme {
+  --color-deadmatte: #0a0a0a;
+  --color-institutional: #f5f5f5;
+  --font-brutalist: Inter, Impact, 'Arial Black', sans-serif;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-deadmatte);
+    color: var(--color-institutional);
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}
