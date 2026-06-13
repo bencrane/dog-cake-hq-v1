@@ -26,7 +26,7 @@ export default function App() {
             transition: { type: "spring", stiffness: 800, damping: 20 }
           }
         }}
-        className="border-[6px] md:border-[8px] px-8 py-6 md:px-14 md:py-10 relative cursor-pointer"
+        className="border-[5px] md:border-[6px] px-6 py-4 md:px-12 md:py-8 relative cursor-pointer"
       >
         <motion.div
           initial={{ clipPath: "inset(100% 0% 0% 0%)", y: 20 }}
@@ -46,7 +46,7 @@ export default function App() {
                 transition: { type: "spring", stiffness: 800, damping: 20 }
               }
             }}
-            className="font-brutalist text-5xl sm:text-7xl md:text-8xl lg:text-[9rem] font-black leading-none uppercase m-0 p-0 whitespace-nowrap"
+            className="font-brutalist text-4xl sm:text-6xl md:text-7xl lg:text-[8rem] font-black leading-none uppercase m-0 p-0 whitespace-nowrap"
             style={{ fontStretch: 'condensed' }}
           >
             DOG CAKE
