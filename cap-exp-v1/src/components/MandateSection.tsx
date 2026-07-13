@@ -7,7 +7,7 @@ export function MandateSection() {
         <div className="rounded-sm border border-zinc-900 bg-[#050505] p-8 lg:p-12">
           <h2 className="text-2xl font-normal tracking-tight text-white">Demand Detection Engine</h2>
           <p className="mt-4 max-w-3xl text-sm text-zinc-400 leading-relaxed">
-            How do we know a company needs capital before they issue a mandate? We monitor public and proprietary datasets for leading indicators of capital distress or sudden growth, isolating middle-market entities experiencing critical catalyst events.
+            We continuously monitor public and proprietary datasets for leading indicators of capital distress or sudden growth. By isolating middle-market entities experiencing critical catalyst events, we route them instantly to the specialty capital providers best equipped to underwrite the transaction before a mandate ever hits the broader market.
           </p>
         </div>
         

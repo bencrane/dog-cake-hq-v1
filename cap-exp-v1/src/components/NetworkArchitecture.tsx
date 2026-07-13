@@ -1,6 +1,6 @@
 export function NetworkArchitecture() {
   return (
-    <section className="bg-black px-4 sm:px-8 py-12 pb-24">
+    <section id="layer" className="bg-black px-4 sm:px-8 py-12 pb-24">
       <div className="mx-auto w-full max-w-7xl flex flex-col lg:flex-row gap-6">
         
         {/* Left Explanation Bento */}

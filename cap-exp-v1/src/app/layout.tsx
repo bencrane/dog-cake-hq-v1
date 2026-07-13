@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description: "An elite, private network facilitating middle-market private credit transactions at critical corporate and strategic inflection points.",
 };
 
+import { TelemetryRail } from "@/components/TelemetryRail";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -28,7 +30,14 @@ export default function RootLayout({
         className={`${inter.variable} ${geistMono.variable} antialiased bg-black text-white font-sans selection:bg-zinc-800 selection:text-white`}
       >
         <div className="bg-noise" />
-        <div className="relative z-10 flex min-h-screen flex-col">
+        
+        {/* The Telemetry Rail (hidden on mobile, visible on md+) */}
+        <div className="hidden md:block">
+          <TelemetryRail />
+        </div>
+
+        {/* Main Content Area (padded on md+ to avoid the rail) */}
+        <div className="relative z-10 flex min-h-screen flex-col md:pl-24">
           {children}
         </div>
       </body>
